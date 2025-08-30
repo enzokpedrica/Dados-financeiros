@@ -10,7 +10,7 @@ import os
 app = func.FunctionApp()
 
 @app.schedule(
-    schedule="0 1 * * * *",  # todo dia às 19:00
+    schedule="0 0 19 * * *",  # todo dia às 19:00
     arg_name="myTimer",
     run_on_startup=False,     # True apenas se quiser testar na inicialização
     use_monitor=False
